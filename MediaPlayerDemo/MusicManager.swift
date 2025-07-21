@@ -14,7 +14,7 @@ import Combine
 @MainActor
 class MusicManager: NSObject {
     
-    var status: MPMediaLibraryAuthorizationStatus = MPMediaLibrary.authorizationStatus()
+    var status: MPMediaLibraryAuthorizationStatus
     
     var albums: ([MPMediaItemCollection], [MPMediaQuerySection]) = ([], [])
     var playlists: [MPMediaPlaylist] = []
@@ -62,8 +62,9 @@ class MusicManager: NSObject {
     private var cancellable: AnyCancellable?
 
     override init() {
-        super.init()
+        self.status = MPMediaLibrary.authorizationStatus()
 
+        super.init()
         self.configureAudioSession()
         
         Task {

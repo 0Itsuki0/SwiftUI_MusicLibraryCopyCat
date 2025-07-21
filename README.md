@@ -5,6 +5,6 @@ A demo of using the [Media Player](https://developer.apple.com/documentation/med
 - get media items (albums, playlist songs) from user's music library
 - listen for library changes
 
-For more details such as applying filters and grouping, please refer to [SwiftUI: Access Music Library with MediaPlayer Framework]()
+For more details such as applying filters and grouping, please refer to [SwiftUI: Access Music Library with MediaPlayer Framework](https://medium.com/@itsuki.enjoy/swiftui-access-music-library-with-mediaplayer-framework-0f0ff2f4ef04)
 
 ![](./demo.gif)
